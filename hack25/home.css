@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     font-family: Arial, sans-serif;
@@ -66,7 +71,7 @@ nav{
 button{
     color: #F5F5DC;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
     height: 40px;
@@ -79,6 +84,11 @@ button{
     background: transparent;
     border: 2px solid white;
 }
+.transparent-btn:hover{
+    background-color:#74c476 ;
+    border:none;
+    color: red;
+}
 h1{
     font-size: 65px;
     font-weight: bold;
@@ -90,4 +100,118 @@ h1{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+.about-us {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+.benefit-box {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 40%;
+    text-align: left;
+}
+.benefit-box:hover{
+    transform: translateY(-5px);  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+    background-color: #b8babd;  
+    color: white;
+}
+
+h2 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    color: #388e3c;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+.cta-button {
+    margin-top: 50px;
+}
+
+.green-btn {
+    background-color: #388e3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.green-btn:hover {
+    background-color: #2e7d32;
+}
+.footer {
+    background: rgba(0, 0, 0, 0.9);  
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;  
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+}
+.social-links img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.9) ;
+    margin-right: 10px;
+}
+.social-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.face:hover {
+    color: #1877F2;
+}
+.tweet:hover{
+    color: black;
+}
+.gram:hover{
+    color: #d62976;
+}
+.in:hover{
+    color: #0077B5;
 }
