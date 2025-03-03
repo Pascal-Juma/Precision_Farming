@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs & Community - Smart Farming</title>
     <link rel="stylesheet" href="faq_community.css">
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -20,15 +22,19 @@
     </nav>
 
     <!-- FAQ Section -->
-    <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <button class="faq-question">How accurate are the rainfall predictions? ▼</button>
-            <div class="faq-answer">Our model uses AI and real-time weather APIs to provide highly accurate predictions.</div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question">Can I get crop recommendations based on my soil? ▼</button>
-            <div class="faq-answer">Yes! Enter your soil type, pH, and rainfall data, and we will suggest the best crops for you.</div>
+    <section id="faq-box">
+        <div id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">How accurate are the rainfall predictions?</button>
+                <div class="faq-answer">Our model uses AI and real-time weather APIs to provide highly accurate
+                    predictions.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I get crop recommendations based on my soil?</button>
+                <div class="faq-answer">Yes! Enter your soil type, pH, and rainfall data, and we will suggest the best
+                    crops for you.</div>
+            </div>
         </div>
     </section>
 
@@ -36,16 +42,17 @@
     <section id="community">
         <h2>Community Discussions</h2>
         <p>Share your farming experiences and ask for advice!</p>
-        <textarea id="postBox" placeholder="Share something..."></textarea>
-        <button onclick="postMessage()">Post</button>
+        <textarea id="postBox" placeholder="Share something..."></textarea><br>
+        <button onclick="postMessage()" id="post-btn">Post</button>
         <div id="community-posts"></div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Contact us: smartfarming@example.com | Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
+        <p>Contact us: info@smartfarming.com | Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
